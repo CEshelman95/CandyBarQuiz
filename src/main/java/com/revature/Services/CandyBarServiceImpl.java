@@ -18,7 +18,7 @@ public class CandyBarServiceImpl implements CandyBarService {
 	
 	@Override
 	public candyBar getCandyBar() {
-		int id = rand.nextInt(12);
+		int id = rand.nextInt(253);
 		return cbr.findById(id).get();
 	}
 

@@ -1,0 +1,11 @@
+<h3>Question {{question.id}}!</h3>
+<h2>{{question.question}}</h2>
+<input type = 'text' required><br>
+
+<div>
+    <button (click) = "this.decrement()" *ngIf="this.count > 1">Previous</button>
+    <button (click) = "this.increment()" *ngIf="this.count < 22">Next</button>
+    <a routerLink = "/candy" *ngIf="this.count > 21">
+        <button>Finish</button>
+    </a>
+</div>
